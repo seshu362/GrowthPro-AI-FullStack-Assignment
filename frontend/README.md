@@ -2,15 +2,21 @@
 
 A full-stack web application that simulates how small businesses might view their SEO content and Google Business data. Built with React, Tailwind CSS, Node.js, Express, and SQLite.
 
+## Live Demo
+
+- **Frontend Deployed on Vercel:** [https://seshu-mini-local-business-dashboard.vercel.app](https://seshu-mini-local-business-dashboard.vercel.app)
+- **Backend Deployed on Render:** [https://growthproai-backend-9ht9.onrender.com](https://growthproai-backend-9ht9.onrender.com)
+
+
 ## Features
 
-- 📱 **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- 🎨 **Modern UI**: Clean, professional design with Tailwind CSS
-- 🚀 **Real-time Data**: Simulated business ratings, reviews, and AI-generated SEO headlines
-- 💾 **Data Persistence**: SQLite database for storing business information
-- 🔄 **Dynamic Headlines**: Regenerate SEO headlines with a single click
-- ✨ **Loading States**: Smooth loading animations and user feedback
-- 🎯 **Form Validation**: Client-side validation for better user experience
+-  **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+-  **Modern UI**: Clean, professional design with Tailwind CSS
+-  **Real-time Data**: Simulated business ratings, reviews, and AI-generated SEO headlines
+-  **Data Persistence**: SQLite database for storing business information
+-  **Dynamic Headlines**: Regenerate SEO headlines with a single click
+-  **Loading States**: Smooth loading animations and user feedback
+-  **Form Validation**: Client-side validation for better user experience
 
 ## Tech Stack
 
@@ -63,15 +69,15 @@ GrowthProAI-Dashboard/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
-   cd GrowthProAI-Dashboard
+   git clone `https://github.com/seshu362/GrowthPro-AI-FullStack-Assignment.git`
+   cd GrowthPro-AI-FullStack-Assignment
    ```
 
 2. **Set up the Backend**
    ```bash
    cd backend
    npm install
-   npm start
+   node server.js
    ```
    The backend server will run on `http://localhost:3000`
 
@@ -90,7 +96,7 @@ For development, you can run both servers simultaneously:
 **Backend (Terminal 1):**
 ```bash
 cd backend
-npm run dev  # Uses nodemon for auto-restart
+node server.js
 ```
 
 **Frontend (Terminal 2):**
@@ -170,39 +176,3 @@ Generates a new SEO headline for the business.
 - User-friendly error messages
 - Graceful fallbacks
 
-## Customization
-
-### Adding New Headlines
-Edit the `seoHeadlines` array in `backend/server.js`:
-
-```javascript
-const seoHeadlines = [
-    "Your custom headline template for {businessName} in {location}",
-    // Add more templates...
-];
-```
-
-### Styling Changes
-Modify `frontend/tailwind.config.js` to customize the design system:
-
-```javascript
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        primary: {
-          // Your custom color palette
-        }
-      }
-    }
-  }
-}
-```
-
-## Performance Optimizations
-
-- Lazy loading for components
-- Optimized bundle size
-- Efficient re-renders
-- Minimal API calls
-- Compressed assets
